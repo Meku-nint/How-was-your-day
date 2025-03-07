@@ -1,0 +1,126 @@
+/* General Styles */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.input-forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-forms input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.input-forms input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f4eeee;
+    text-align: center;
+}
+
+.forget-create {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.forget-create p {
+    padding: 5px;
+    font-size: 16px;
+    color: #1359a4;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 48%;
+    text-align: center;
+}
+
+.forget-create p:hover {
+    color: black;
+}
+@media (max-width: 768px) {
+    .login-page {
+        padding: 20px;
+    }
+
+    .input-forms {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .forget-create {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .forget-create p {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 15px;
+    }
+
+    .input-forms input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .forget-create p {
+        font-size: 14px;
+    }
+}

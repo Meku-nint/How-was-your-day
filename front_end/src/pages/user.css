@@ -1,0 +1,217 @@
+.user-nav {
+    position: fixed;
+    color: white;
+    top:0;
+    background-color: black;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 40%;
+    cursor: pointer;
+    list-style: none;
+    font-size: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+}
+.delete-cancel {
+    margin-top:-10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}   
+.delete-cancel button {
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+}.delete-cancel button:hover{
+    background-color: #0277ba;
+}
+.menu {
+    cursor: pointer;
+    color: white;
+}
+
+.menu:hover, .tell-me:hover {
+    color: #c2d7ee;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.fire {
+    font-size: 24px;
+}
+.profile {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-top:10%;
+}
+
+.profile p {
+    word-break: break-all;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile img {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.user-profile p {
+    text-align: center;
+    padding: 5px;
+}
+.main-body {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.main-body h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(130, 110, 9);
+}
+.main-body li {
+    border-radius: 5px;
+    background-color: #d3d1d1;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+    word-break: break-all;
+    margin: 10px;
+    list-style: none;
+    padding: 8px;
+}
+.main-body li:hover {
+    background-color: #ccd0d4;
+}
+.entry-header {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    color: rgb(56, 9, 114);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.delete-edit-icons {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(56, 9, 114);
+}
+.message {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.write-diary {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+}
+.write-diary button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 50px;
+    margin-top: 50px;
+    height: fit-content;
+    background-color: #0277ba;
+    color: white;
+    cursor: pointer;
+}
+.write-diary button:hover {
+    background-color: #10927e;
+    color: black;
+}
+.write-diary textarea {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    height: 100px;
+}
+.user-name{
+    padding: 5px;
+   text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#0277ba;
+}
+.foot {
+    bottom: 0;
+    top:0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    left: 0;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+
+.foot a {
+    color: green;
+}
+
+.foot a:hover {
+    color: #c2d7ee;
+}
+
+@media (max-width: 768px) {
+    .user-nav {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .profile {
+        margin-top:100px;
+        flex-direction: row;
+        width: 90%;
+    }
+    .write-diary {
+        width: 90%;
+    }
+    .main-body {
+        width: 100%;
+        padding: 10px;
+    }
+    .main-body li {
+        font-size: 16px;
+    }
+    .entry-header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .delete-edit-icons {
+        flex-direction: row;
+    }
+}

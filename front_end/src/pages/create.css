@@ -1,0 +1,168 @@
+.create-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.input-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    max-width: 100%;
+}
+
+.input-forms img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.input-forms input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-forms input:focus {
+    border-color: #007bff;
+}
+
+.input-forms button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input-forms button:hover {
+    background: #0056b3;
+}
+
+.response {
+    color: green;
+    padding: 2px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form .verification {
+    padding: 50px;
+    background-color: thistle;
+    border-radius: 10px;
+}
+
+.verification input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: border 0.3s;
+}
+
+.verification button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+@media (max-width: 768px) {
+    .input-forms {
+        width: 90%; /* Make form container wider for tablet and mobile */
+        padding: 15px;
+    }
+
+    .input-forms input,
+    .input-forms button {
+        font-size: 14px; /* Slightly smaller font size on smaller screens */
+        padding: 12px;
+    }
+
+    .response {
+        font-size: 14px;
+    }
+
+    .verification {
+        padding: 40px;
+    }
+
+    .verification input,
+    .verification button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-forms {
+        width: 95%; /* Maximize form width on smaller devices */
+        padding: 10px;
+    }
+
+    .input-forms input,
+    .input-forms button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .response {
+        font-size: 14px;
+    }
+
+    form .verification {
+        padding: 30px;
+    }
+
+    .verification input,
+    .verification button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .create-body {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .input-forms {
+        width: 400px; 
+    }
+
+    .input-forms input,
+    .input-forms button {
+        font-size: 18px; /* Larger font size for bigger screens */
+    }
+
+    .verification {
+        padding: 60px;
+    }
+
+    .verification input,
+    .verification button {
+        font-size: 18px;
+    }
+}

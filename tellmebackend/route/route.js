@@ -1,0 +1,16 @@
+import express from 'express';
+import { forgetPassword,verifyDelete,signup ,login,verifyUser, fetchData,UserName, postText ,auth,deleteDiary,deleteAccount,changePassword,changeUserName} from '../controllers/reqrescontroller.js';
+const router =express.Router();
+router.post('/signup',signup);
+router.post('/login',login);
+router.post('/verify',verifyUser);
+router.get('/user',auth,fetchData);
+router.get('/user_name',auth,UserName);
+router.post('/text',auth,postText);
+router.delete('/delete',auth,deleteDiary);
+router.delete('/deleteAccount',auth,deleteAccount);
+router.post('/forget',forgetPassword);
+router.post('/verifyDelete',verifyDelete);
+router.post('/changePassword',auth,changePassword);
+router.post('/changeName',auth,changeUserName);
+export default router;

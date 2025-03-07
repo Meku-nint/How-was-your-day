@@ -1,0 +1,235 @@
+/* Menu List */
+.menu-list {
+    background-color: black;
+    top: 55px;
+    position: fixed;
+    color: white;
+    width: 15%;
+    z-index: 1000;
+    border-radius: 5px;
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list ul {
+    width: 90%;
+    margin: auto;
+}
+
+.menu-list ul li {
+    cursor: pointer;
+    padding: 5px 0px 5px 5px;
+    list-style: none;
+    margin: 7px 0px 7px 7px;
+}
+
+.menu-list ul li:hover {
+    background-color: #8e6644;
+    color: black;
+}
+
+span {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: tomato;
+    transition: cubic-bezier(2.075, 0.82, 0.165, 1);
+    text-align: center;
+    margin: 50vh;
+    position: absolute;
+}
+
+/* Delete Form */
+.delete-form {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.delete-account {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.delete-account input {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.delete-account input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.delete-account button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-account p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+/* Edit Profile Form */
+.edit-profile-form {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.edit-profile {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.set-time {
+    display: none;
+}
+
+details {
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+summary {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+summary:hover {
+    background-color: #d6d8db;
+}
+
+.edit-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Menu List */
+    .menu-list {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Menu List */
+    .menu-list {
+        width: 30%;
+    }
+
+    /* Span */
+    span {
+        font-size: 18px;
+        margin: 10vh 0;
+    }
+    .edit-profile {
+        width: 80%;
+        max-width: 400px;
+    }
+    .delete-account {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .edit-profile-form, .delete-form {
+        padding: 10px;
+    }
+
+    .menu-list ul li {
+        padding: 8px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Menu List */
+    .menu-list {
+        width: 50%;
+    }
+
+    /* Span */
+    span {
+        font-size: 16px;
+        margin: 10vh 0;
+    }
+
+    /* Edit Profile Form */
+    .edit-profile {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    .delete-account {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .edit-button, .delete-account button {
+        font-size: 14px;
+    }
+    .edit-profile input, .delete-account input {
+        font-size: 14px;
+    }
+    .menu-list ul {
+        width: 100%;
+        padding: 0;
+    }
+}
