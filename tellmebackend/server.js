@@ -7,7 +7,7 @@ const app=express()
 dotenv.config()
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow your front-end origin
+    origin: 'https://front-end-iqnj.onrender.com', // Allow your front-end origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
     credentials: true, // Allow credentials (if needed)
 }));
