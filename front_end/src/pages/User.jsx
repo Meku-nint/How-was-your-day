@@ -32,7 +32,7 @@ const User = () => {
                 return;
             }
             try {
-                const response = await axios.get('http://localhost:5000/tellme/user', {
+                const response = await axios.get('https://how-was-your-day.onrender.com/tellme/user', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setUserData(response.data);

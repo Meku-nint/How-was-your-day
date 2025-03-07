@@ -13,7 +13,7 @@ const ForgotPassword = () => {
  const forgetCodeHandler=async(e)=>{
       e.preventDefault();
       try {
-        const response=await axios.post("http://localhost:5000/tellme/verifyDelete",{verificationCode,newPassword});
+        const response=await axios.post("https://how-was-your-day.onrender.com/tellme/verifyDelete",{verificationCode,newPassword});
         alert(response.data.message);
         navigate('/login');
     } catch (error) {
@@ -23,7 +23,7 @@ const ForgotPassword = () => {
  const forgetHandler=async(e)=>{
         e.preventDefault();
         try {
-            const response=await axios.post("http://localhost:5000/tellme/forget",{email});
+            const response=await axios.post("https://how-was-your-day.onrender.com/tellme/forget",{email});
             setForgetResponse(response.data.message);
             setEmailView(false);
         } catch (error) {

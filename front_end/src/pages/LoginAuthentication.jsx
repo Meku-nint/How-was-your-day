@@ -24,7 +24,7 @@ const LoginAuthentication = () => {
   const handleSubmitLogin = async (event) => {
     event.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/tellme/login', loginData);
+      const res = await axios.post('https://how-was-your-day.onrender.com/tellme/login', loginData);
       setResponse(res.data.message);
       if (res.data.token) {
         localStorage.setItem('token', res.data.token);

@@ -20,7 +20,7 @@ const MenuOptions = () => {
             navigate('/login');
             return;
         }
-        axios.delete('http://localhost:5000/tellme/deleteAccount', {
+        axios.delete('https://how-was-your-day.onrender.com/tellme/deleteAccount', {
             headers: { Authorization: `Bearer ${token}` },
             data: { password },
         }).then((response) => {

@@ -28,7 +28,7 @@ const CreateAccount = () => {
     const verificationCodeHandler = async (event) => {
         event.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/tellme/verify', { code });
+            const res = await axios.post('https://how-was-your-day.onrender.com/tellme/verify', { code });
             setSignupResponse(res.data.message);
         } catch (error) {
             if (error.response) {
@@ -46,7 +46,7 @@ const CreateAccount = () => {
             return;
         }
         try {
-            const res = await axios.post('http://localhost:5000/tellme/signup', signupData);
+            const res = await axios.post('https://how-was-your-day.onrender.com/tellme/signup', signupData);
             setSignupResponse(res.data.message);
             setVerify(true);
         } catch (error) {
