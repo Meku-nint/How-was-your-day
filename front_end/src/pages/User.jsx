@@ -52,12 +52,12 @@ const User = () => {
             return;
         }
         try {
-           const response= await axios.delete('http://localhost:5000/tellme/delete', {
+           const response= await axios.delete('https://how-was-your-day.onrender.com/tellme/delete', {
                 headers: { Authorization: `Bearer ${token}` },
                 data: { diaryId }
             });
             alert(response.data.message);
-            const res = await axios.get('http://localhost:5000/tellme/user', {
+            const res = await axios.get('https://how-was-your-day.onrender.com/tellme/user', {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setUserData(res.data);
@@ -72,7 +72,7 @@ const User = () => {
             return;
         }
         try {
-            const response = await axios.get('http://localhost:5000/tellme/user_name', {
+            const response = await axios.get('https://how-was-your-day.onrender.com/tellme/user_name', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setUserName(response.data.name);
@@ -91,11 +91,11 @@ const User = () => {
           return;
       }
       try {
-          await axios.post('http://localhost:5000/tellme/text', {text }, { 
+          await axios.post('https://how-was-your-day.onrender.com/tellme/text', {text }, { 
               headers: { Authorization: `Bearer ${token}` }
           });
           setText('');
-          const res = await axios.get('http://localhost:5000/tellme/user', {
+          const res = await axios.get('https://how-was-your-day.onrender.com/tellme/user', {
               headers: { Authorization: `Bearer ${token}` },
           });
           setUserData(res.data);
