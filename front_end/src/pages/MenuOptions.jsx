@@ -20,7 +20,7 @@ const MenuOptions = () => {
             navigate('/login');
             return;
         }
-        axios.delete('https://how-was-your-day.onrender.com/tellme/deleteAccount', {
+        axios.delete("https://how-was-your-day.onrender.com/tellme/deleteAccount", {
             headers: { Authorization: `Bearer ${token}` },
             data: { password },
         }).then((response) => {
@@ -41,7 +41,7 @@ const MenuOptions = () => {
             navigate('/login');
             return;
         }
-        axios.post('http://localhost:5000/tellme/changePassword', { password, newPassword }, {
+        axios.post("ttps://how-was-your-day.onrender.com/tellme/changePassword", { password, newPassword }, {
             headers: { Authorization: `Bearer ${token}` }
         }).then((response) => {
             setFromServer(response.data.message);
@@ -60,7 +60,7 @@ const MenuOptions = () => {
             navigate('/login');
             return;
         }
-        axios.post('http://localhost:5000/tellme/changeName', { name, password }, {
+        axios.post('https://how-was-your-day.onrender.com/tellme/changeName', { name, password }, {
             headers: { Authorization: `Bearer ${token}` }
         }).then((response) => {
             setFromServer(response.data.message);
