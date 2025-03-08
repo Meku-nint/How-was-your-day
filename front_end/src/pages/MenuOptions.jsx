@@ -32,7 +32,7 @@ const MenuOptions = () => {
     };
 
     const passwordEditHandler = (e) => {
-        if(newPassword!=confirmPassword){
+        if(newPassword!==confirmPassword){
             return alert('the password is not match');
         }
         e.preventDefault();
@@ -41,7 +41,7 @@ const MenuOptions = () => {
             navigate('/login');
             return;
         }
-        axios.post("ttps://how-was-your-day.onrender.com/tellme/changePassword", { password, newPassword }, {
+        axios.post("https://how-was-your-day.onrender.com/tellme/changePassword", { password, newPassword }, {
             headers: { Authorization: `Bearer ${token}` }
         }).then((response) => {
             setFromServer(response.data.message);
