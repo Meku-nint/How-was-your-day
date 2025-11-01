@@ -19,15 +19,15 @@ Secure Authentication – Keep your personal data safe with user accounts.
 
 🏗️ Tech Stack
 
-Frontend: React.js, Tailwind CSS / Material UI
+Frontend: React.js, Tailwind CSS
 
 Backend: Express.js, Node.js
 
-Database: MongoDB / PostgreSQL (choose one)
+Database: MongoDB
 
-Authentication: JWT / Passport.js
+Authentication: JWT
 
-Hosting: Vercel / Render / Heroku
+Hosting: Render
 
 🧩 Architecture Overview
 
@@ -35,6 +35,6 @@ Frontend (React.js) – Provides a clean and intuitive user interface for loggin
 
 Backend (Express.js) – Handles API requests, authentication, and data storage.
 
-Database Layer – Stores daily entries, user profiles, and productivity metrics.
+Database Layer (MongoDB) – Stores daily entries, user profiles, and productivity metrics.
 
 Analytics Module – Calculates productivity scores, mood trends, and generates visual reports.
